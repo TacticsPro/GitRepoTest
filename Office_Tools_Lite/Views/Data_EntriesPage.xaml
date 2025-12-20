@@ -1,0 +1,38 @@
+﻿<Page
+    x:Class="Office_Tools_Lite.Views.Data_EntriesPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:Name="ContentArea" Margin="50,0,0,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Button x:Name="Btn10" Content="Narration Correction"       FontSize="16" Background="#2780e3" Foreground="#ffffff" Width="250" Height="40" Margin="5" Grid.Row="0" Grid.Column="0" Click="Button_Click_10"/>
+        <Button x:Name="Btn11" Content="Voucher No. Correction"     FontSize="16" Background="#2780e3" Foreground="#ffffff" Width="250" Height="40" Margin="5" Grid.Row="0" Grid.Column="1" Click="Button_Click_11"/>
+        
+        <Button x:Name="Btn1" Content="Sales/Purchase Entry"        FontSize="16" Background="Gray" Foreground="#ffffff" Width="250" Height="40" Margin="5" Grid.Row="1" Grid.Column="0" Click="Run_Data_Entries"/>
+        <Button x:Name="Btn2" Content="Wines Entry"                 FontSize="16" Background="Gray" Foreground="#ffffff" Width="250" Height="40" Margin="5" Grid.Row="1" Grid.Column="1" Click="Run_Data_Entries"/>
+        <Button x:Name="Btn3" Content="Bar Entry"                   FontSize="16" Background="Gray" Foreground="#ffffff" Width="250" Height="40" Margin="5" Grid.Row="2" Grid.Column="0" Click="Run_Data_Entries"/>
+        <Button x:Name="Btn4" Content="Room Rent Entry"             FontSize="16" Background="Gray" Foreground="#ffffff" Width="250" Height="40" Margin="5" Grid.Row="2" Grid.Column="1" Click="Run_Data_Entries"/>
+        <Button x:Name="Btn5" Content="Bank Entry"                  FontSize="16" Background="Gray" Foreground="#ffffff" Width="250" Height="40" Margin="5" Grid.Row="3" Grid.Column="0" Click="Run_Data_Entries"/>
+        <Button x:Name="Btn6" Content="Ledger Creation of Parties"  FontSize="16" Background="Gray" Foreground="#ffffff" Width="250" Height="40" Margin="5" Grid.Row="3" Grid.Column="1" Click="Run_Data_Entries"/>
+        <Button x:Name="Btn7" Content="Voucher Entries"             FontSize="16" Background="Gray" Foreground="#ffffff" Width="250" Height="40" Margin="5" Grid.Row="4" Grid.Column="0" Click="Run_Data_Entries"/>
+        <Button x:Name="Btn8" Content="Voucher Entries (Excel)"     FontSize="16" Background="Gray" Foreground="#ffffff" Width="250" Height="40" Margin="5" Grid.Row="4" Grid.Column="1" Click="Run_Data_Entries"/>
+        <Button x:Name="Btn9" Content="Sales+Labour Entries"        FontSize="16" Background="Gray" Foreground="#ffffff" Width="250" Height="40" Margin="5" Grid.Row="5" Grid.Column="0" Click="Run_Data_Entries"/>
+
+
+    </Grid>
+</Page>

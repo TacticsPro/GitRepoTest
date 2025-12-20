@@ -1,0 +1,10 @@
+﻿{
+    "profiles": {
+      "Office_Tools_Lite (Package)": {
+        "commandName": "MsixPackage"
+      },
+      "Office_Tools_Lite (Unpackaged)": {
+        "commandName": "Project"
+      }
+    }
+}

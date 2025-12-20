@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="Office_Tools_Lite.CLOSED_XML.Other_Tools.Notice_Letter_to_Tax_Office"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Office_Tools_Lite.CLOSED_XML.Other_Tools"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid>
+        <TextBlock Text="Notice Letter to Tax Office"  HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Foreground="Blue" Margin="0,-60,0,0"/>
+        <Border BorderBrush="Black" BorderThickness="1"  Margin="40,-70,40,40" Width="350" Height="400"/>
+        <StackPanel Width="350" Height="435"  Margin="40,-70,40,90"  >
+
+            <Grid Width="350" Height="440">
+
+                <TextBlock Text="Firm Name:" Margin="88,70,0,0" Width="145" Height="26" VerticalAlignment="Top"   HorizontalAlignment="Left"  FontSize="14"/>
+                <TextBox x:Name="FirmNameTextBox" Margin="178,60,0,0" Width="145" Height="16" VerticalAlignment="Top"    HorizontalAlignment="Left" FontSize="12"/>
+
+                <TextBlock Text="Prop Name:" Margin="86,105,0,0" VerticalAlignment="Top"  HorizontalAlignment="Left"  FontSize="14"/>
+                <TextBox x:Name="PropNameTextBox" Margin="178,95,0,0" Width="145" Height="16" VerticalAlignment="Top"   HorizontalAlignment="Left"  FontSize="12"/>
+
+                <TextBlock Text="Address:" Margin="105,150,0,0" VerticalAlignment="Top"  HorizontalAlignment="Left"  FontSize="14"/>
+                <TextBox x:Name="AddressTextBox" Margin="178,130,0,0" Width="145" Height="55" VerticalAlignment="Top"  TextWrapping="Wrap" AcceptsReturn="True" HorizontalAlignment="Left" FontSize="12"/>
+
+                <TextBlock Text="Firm GSTIN:" Margin="85,200,0,0" Width="81" Height="26" VerticalAlignment="Top"   HorizontalAlignment="Left"  FontSize="14"/>
+                <TextBox x:Name="GSTINTextBox" Margin="178,190,0,0" Width="145" Height="16" VerticalAlignment="Top"    HorizontalAlignment="Left" FontSize="12"/>
+
+                <TextBlock Text="Financial Year:" Margin="72,235,0,0" VerticalAlignment="Top"  HorizontalAlignment="Left"  FontSize="14"/>
+                <TextBox  x:Name="YearTextBox" Margin="178,225,0,0" VerticalAlignment="Top" Width="145" Height="16"    HorizontalAlignment="Left" FontSize="12"/>
+
+                <TextBlock Text="Place:" Margin="123,270,0,0" Width="46" VerticalAlignment="Top"  HorizontalAlignment="Left"  FontSize="14" />
+                <TextBox x:Name="PlaceTextBox" Margin="178,260,0,0" Width="145" Height="16" VerticalAlignment="Top"    HorizontalAlignment="Left" FontSize="12"/>
+
+                <TextBlock Text="GSTR-3B Input Tax:" Margin="42,305,0,0" VerticalAlignment="Top"  HorizontalAlignment="Left"  FontSize="14"/>
+                <TextBox x:Name="GSTR3BTextBox" Margin="178,295,0,0"  HorizontalAlignment="Left"  VerticalAlignment="Top" Width="145" Height="16" FontSize="12"/>
+
+                <TextBlock Text="GSTR-2A/2B Input Tax:" Margin="20,340,0,0" HorizontalAlignment="Left"  VerticalAlignment="Top" FontSize="14"/>
+                <TextBox x:Name="GSTR2A2BTextBox" Margin="178,330,0,0"  HorizontalAlignment="Left"  VerticalAlignment="Top" Width="145" Height="16" FontSize="12"/>
+
+                <TextBlock Text="As per Notice Input Tax:"  Margin="12,375,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="14"/>
+                <TextBox x:Name="NoticeITCTextBox" Margin="178,365,0,0" HorizontalAlignment="Left"   VerticalAlignment="Top" Width="145" Height="16" FontSize="12"/>
+
+                <Button Margin="0,0,0,10" Width="140" VerticalAlignment="Bottom"  HorizontalAlignment="Center" Content="Generate Letter" Background="#FF2183DE" Foreground="White" FontSize="14" Click="GenerateLetterButton_Click"/>
+
+            </Grid>
+
+        </StackPanel>
+        <TextBlock x:Name="ProcessingText"
+                        Text="Processing.. please wait"
+                        Foreground="Red"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Bottom"
+                        Margin="0,0,0,30"
+                        Visibility="Collapsed"/>
+    </Grid>
+</Page>
