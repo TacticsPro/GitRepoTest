@@ -1,9 +1,0 @@
-﻿################################################################################
-# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
-################################################################################
-/Office_Tools_Lite/.vs
-/Office_Tools_Lite/.vs/Office_Tools_Lite
-/Office_Tools_Lite/bin
-/Office_Tools_Lite.Core/bin
-/Office_Tools_Lite/obj
-/Office_Tools_Lite.Core/obj
